@@ -1,15 +1,21 @@
 const Video = () => {
   return (
-    <div className="h-screen w-screen">
-      <div className="absolute bg-black opacity-50"></div>
-      <video
-        autoPlay
-        muted
-        loop
-        className="h-screen w-screen  object-cover"
-        src="/assets/videos/bg-video.mp4"
-      />
-    </div>
+    <>
+      <div className="relative w-screen h-screen flex flex-col">
+        <div
+          className="absolute w-full h-full bg-black opacity-50"
+          style={{ zIndex: 1 }}
+        ></div>
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute h-screen w-screen object-cover"
+          style={{ zIndex: 0 }}
+          src="/assets/videos/bg-video.mp4"
+        />
+      </div>
+    </>
   );
 };
 

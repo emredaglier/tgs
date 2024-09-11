@@ -37,7 +37,7 @@ const Nav = () => {
   return (
     <>
       <div
-        className={`fixed w-full bg-white/80 dark:bg-[--background] border-b dark:border-b-gray-800 text-[--foreground] ${margin} py-[20px] backdrop-blur-md`}
+        className={`fixed z-50 w-full bg-white/90 dark:bg-[--background] border-b dark:border-b-gray-800 text-[--foreground] ${margin} py-[20px] backdrop-blur-md`}
       >
         <header className="flex flex-row items-center justify-between">
           <div className="flex w-[157px] xl:w-[237px]">
