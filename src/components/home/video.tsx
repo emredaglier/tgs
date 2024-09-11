@@ -1,12 +1,13 @@
 const Video = () => {
   return (
-    <div className="w-full h-full">
+    <div className="h-screen w-screen">
+      <div className="absolute bg-black opacity-50"></div>
       <video
         autoPlay
         muted
         loop
-        className="w-full h-full object-cover"
-        src="/assets/videos/home.mp4"
+        className="h-screen w-screen  object-cover"
+        src="/assets/videos/bg-video.mp4"
       />
     </div>
   );

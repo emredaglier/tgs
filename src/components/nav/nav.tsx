@@ -3,19 +3,9 @@
 import Image from "next/image";
 import margin from "../margin";
 import NextLink from "next/link";
-import { useState } from "react";
 import useDarkMode from "../isDark";
 
 import { Button } from "../ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 import {
   NavigationMenu,
@@ -30,6 +20,7 @@ import NavCard from "./card";
 import SideNavbar from "./navbar";
 
 import { ArrowRight, ChevronDown, Sidebar } from "lucide-react";
+import NavLanguage from "./language";
 
 type LinkProps = {
   href: string;
@@ -41,13 +32,12 @@ const Link = ({ href, ...props }: LinkProps) => {
 };
 
 const Nav = () => {
-  const [language, setLanguage] = useState("english");
   const isDarkMode = useDarkMode();
 
   return (
     <>
       <div
-        className={`w-full bg-[--background] border-b dark:border-b-gray-800 text-[--foreground] ${margin} py-[20px]`}
+        className={`fixed w-full bg-white/80 dark:bg-[--background] border-b dark:border-b-gray-800 text-[--foreground] ${margin} py-[20px] backdrop-blur-md`}
       >
         <header className="flex flex-row items-center justify-between">
           <div className="flex w-[157px] xl:w-[237px]">
@@ -71,7 +61,7 @@ const Nav = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
-                <NavigationMenuContent className="relative bg-[--background] w-screen">
+                <NavigationMenuContent className="relative bg-transparent w-screen">
                   <section className=" flex flex-row justify-between w-full">
                     <div className="flex">
                       <Link href="/services">
@@ -139,36 +129,12 @@ const Nav = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="hidden xl:flex gap-10 ">
-            <div>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="language">
-                    Language
-                    <ChevronDown strokeWidth={1.5} />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56">
-                  <DropdownMenuLabel>Language</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuRadioGroup
-                    value={language}
-                    onValueChange={setLanguage}
-                  >
-                    <DropdownMenuRadioItem value="english">
-                      English
-                    </DropdownMenuRadioItem>
-                    <DropdownMenuRadioItem value="turkish">
-                      Turkish
-                    </DropdownMenuRadioItem>
-                  </DropdownMenuRadioGroup>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
-
-            <Button variant="default" size={"lg"}>
+            <NavLanguage />
+            <Button variant="default" size={"lg"} className="md:w-min">
               Contact
             </Button>
           </div>
+
           <SideNavbar />
         </header>
       </div>

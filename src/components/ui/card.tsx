@@ -9,7 +9,8 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      " bg-card hover:bg-gray-200 dark:hover:bg-card/5 text-card-foreground transition-colors",
+      //add accent gradient
+      "bg-transparent hover:bg-[--accent-100] dark:hover:bg-[--accent-700] text-card-foreground transition-colors",
       className
     )}
     {...props}

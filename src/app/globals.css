@@ -6,6 +6,17 @@
   --background: #ffffff;
   --foreground: #080808;
   --accent: #c90119;
+
+  --ccent-50: #fff0f2;
+  --accent-100: #ffdde1;
+  --accent-200: #ffc1c8;
+  --accent-300: #ff96a3;
+  --accent-400: #ff5a6e;
+  --accent-500: #ff2741;
+  --accent-600: #fb0724;
+  --accent-700: #c90119;
+  --accent-800: #af0519;
+  --accent-900: #900c1c;
 }
 
 @media (prefers-color-scheme: dark) {

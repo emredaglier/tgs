@@ -21,7 +21,7 @@ const Link = ({ href, ...props }: LinkProps) => {
 const NavCard = (params: CardProps) => {
   return (
     <Link href={params.href}>
-      <Card className="flex flex-col bg-[--background] min-h-[200px] ">
+      <Card className="flex flex-col bg-white/70 backdrop-blur-md dark:bg-black/90 min-h-[200px]">
         <CardHeader>
           <CardTitle className="text-[--foreground]">
             <div className="flex items-center justify-between flex-row">
@@ -31,7 +31,7 @@ const NavCard = (params: CardProps) => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-[--foreground] opacity-75 dark:opacity-50 font-light">
+          <p className="text-[--foreground] opacity-75 dark:opacity-100  font-light">
             {params.content}
           </p>
         </CardContent>

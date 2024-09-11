@@ -4,7 +4,10 @@ import Nav from "../nav/nav";
 const HomeApp = () => {
   return (
     <>
-      <Nav />
+      <div className="relative w-full h-screen flex flex-col">
+        <Video />
+        <Nav />
+      </div>
     </>
   );
 };

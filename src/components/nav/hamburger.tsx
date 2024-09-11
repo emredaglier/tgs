@@ -28,19 +28,19 @@ const AnimatedHamburger: React.FC<AnimatedHamburgerProps> = ({ isOpen }) => {
     >
       <div className="absolute inset-0 flex flex-col justify-center items-center">
         <motion.span
-          className="w-6 h-0.5 bg-gray-600 mb-1.5"
+          className="w-6 h-0.5 bg-white mb-1.5"
           variants={topLineVariants}
           animate={isOpen ? "open" : "closed"}
           transition={{ duration: 0.3 }}
         />
         <motion.span
-          className="w-6 h-0.5 bg-gray-600 mb-1.5"
+          className="w-6 h-0.5 bg-white mb-1.5"
           variants={middleLineVariants}
           animate={isOpen ? "open" : "closed"}
           transition={{ duration: 0.3 }}
         />
         <motion.span
-          className="w-6 h-0.5 bg-gray-600"
+          className="w-6 h-0.5 bg-white"
           variants={bottomLineVariants}
           animate={isOpen ? "open" : "closed"}
           transition={{ duration: 0.3 }}
