@@ -1,4 +1,6 @@
-const Video = () => {
+import BackgroundVideo from "next-video/background-video";
+
+const HomeVideo = () => {
   return (
     <>
       <div className="relative w-screen h-screen flex flex-col">
@@ -7,16 +9,17 @@ const Video = () => {
           style={{ zIndex: 1 }}
         ></div>
         <video
+          src={
+            "https://heeayulnhyor92wd.public.blob.vercel-storage.com/bg-video-cGpFc9yCN3yC1jwjfTQN6qozBCojU3.webm"
+          }
+          className="w-full h-full object-cover"
           autoPlay
           muted
           loop
-          className="absolute h-screen w-screen object-cover"
-          style={{ zIndex: 0 }}
-          src="/assets/videos/bg-video.mp4"
-        />
+        ></video>
       </div>
     </>
   );
 };
 
-export default Video;
+export default HomeVideo;
