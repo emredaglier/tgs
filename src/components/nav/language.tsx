@@ -23,7 +23,7 @@ const NavLanguage = () => {
             <ChevronDown strokeWidth={1.5} />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-screen max-h md:w-56">
+        <DropdownMenuContent className="w-full max-h md:w-56">
           <DropdownMenuLabel>Language</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuRadioGroup value={language} className="flex flex-col ">

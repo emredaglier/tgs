@@ -11,15 +11,15 @@ const HomeIntroduction = () => {
       >
         <div className="flex flex-col max-w gap-10">
           <div className="flex flex-col gap-5">
-            <h1 className="text-4xl lg:text-5xl font-bold text-white">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white">
               We make a difference with our professional team.
             </h1>
-            <h3 className="text-white tracking-wide font-light">
+            <p className="text-white tracking-wide font-light text-xl">
               Professionalism, respect, teamwork, dynamism, and innovation are
               our core values. While using resources efficiently, we adhere to
               the highest security standards in confidentiality. We act with the
               principle of excellence and reliability at every step.
-            </h3>
+            </p>
           </div>
 
           <Button variant="default" size={"lg"} className="w-min gap-5">

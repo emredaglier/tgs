@@ -10,7 +10,7 @@ const HomeVideo = () => {
         ></div>
         <video
           src={
-            "https://heeayulnhyor92wd.public.blob.vercel-storage.com/bg-video-cGpFc9yCN3yC1jwjfTQN6qozBCojU3.webm"
+            "https://heeayulnhyor92wd.public.blob.vercel-storage.com/bg-loop-yI06O2DcPQfELDruZE5X367Olabk20"
           }
           className="w-full h-full object-cover"
           autoPlay
