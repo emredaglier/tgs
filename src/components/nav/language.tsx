@@ -9,18 +9,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
 import { Button } from "../ui/button";
-import { ComponentProps, useState } from "react";
+import { useState } from "react";
 
 const NavLanguage = () => {
   const [language, setLanguage] = useState("en");
-
-  const setLanguageHandler = () => {
-    if (language === "en") {
-      setLanguage("tr");
-    } else {
-      setLanguage("en");
-    }
-  };
 
   return (
     <div>

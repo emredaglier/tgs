@@ -7,7 +7,6 @@ const HomeApp = () => {
     <>
       <div className="relative w-full h-screen flex flex-col">
         <Video />
-
         <Nav />
         <HomeIntroduction />
       </div>
