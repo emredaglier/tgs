@@ -66,7 +66,7 @@ const Nav = () => {
                     <div className="flex">
                       <Link href="/services">
                         <div className="relative bg-[--accent] h-full min-w-[400px]">
-                          <div className="absolute w-full h-full bg-[url('/assets/images/nav/phd.png')] bg-cover bg-[center_bottom] bg-no-repeat opacity-50 rounded "></div>
+                          <div className="absolute w-full h-full bg-[url('https://heeayulnhyor92wd.public.blob.vercel-storage.com/phd-1as1IM2ZvJmXML9BJDQThpX2ZG0zTc.png')] bg-cover bg-[center_bottom] bg-no-repeat opacity-50 rounded "></div>
                           <div className="absolute flex flex-col justify-between w-full h-full p-4 text-white">
                             <div className="flex ">
                               <h1 className="text-4xl font-light ">

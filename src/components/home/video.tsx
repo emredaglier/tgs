@@ -1,9 +1,7 @@
-import BackgroundVideo from "next-video/background-video";
-
 const HomeVideo = () => {
   return (
     <>
-      <div className="relative w-screen h-screen flex flex-col">
+      <div className="relative h-[110vh] w-screen flex flex-col">
         <div
           className="absolute w-full h-full bg-black opacity-50"
           style={{ zIndex: 1 }}

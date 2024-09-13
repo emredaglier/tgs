@@ -6,7 +6,7 @@ const HomeIntroduction = () => {
   return (
     <>
       <div
-        className={`absolute flex flex-col lg:w-2/3 xl:w-1/2 h-screen justify-center ${margin}`}
+        className={`absolute font-geist flex flex-col lg:w-2/3 xl:w-1/2 h-screen justify-center ${margin}`}
         style={{ zIndex: 3 }}
       >
         <div className="flex flex-col max-w gap-10">

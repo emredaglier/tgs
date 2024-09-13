@@ -1,3 +1,4 @@
+import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} antialiased`}>{children}</body>
     </html>
   );
 }
