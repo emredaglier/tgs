@@ -51,8 +51,8 @@ const Numbers = () => {
 const HomeAbout = () => {
   return (
     <>
-      <section className="relative z-[2] flex w-full h-min rounded-t-3xl bg-[--background]">
-        <div className="absolute flex w-[300px] h-[300px] translate-y-[500px] translate-x-[150px] bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"></div>
+      <section className="relative z-[2] overflow-hidden flex w-full h-min rounded-t-3xl bg-[--background]">
+        <div className="absolute  flex w-[300px] h-[300px] translate-y-[500px] translate-x-[150px] bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"></div>
 
         <div className="flex md:py-[96px] lg:py-[196px] xl:py-[256px] 2xl:py-[384px] z-[1]">
           <ImageSection

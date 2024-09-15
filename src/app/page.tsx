@@ -13,7 +13,7 @@ export const metadata = {
     "Handling Services. Profesyonel ekip gerektiren ve bir uzmanlık alanı olan Business Jet Hizmeti kapsamında TGS, yeni ekipman ve iş gücü avantajlarına da sahip...",
 };
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <MainApp />
