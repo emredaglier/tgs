@@ -53,6 +53,7 @@ const Nav = () => {
                 width={237}
                 height={56}
                 priority
+                className="pointer-events-none"
               />
             </Link>
           </div>

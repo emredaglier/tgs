@@ -29,7 +29,7 @@ const ImageSection = (params: ImageSectionProps) => {
             alt={params.title}
             width={1920}
             height={1080}
-            className="rounded-tl-[128px] rounded-br-[128px]"
+            className="rounded-tl-[128px] rounded-br-[128px] pointer-events-none"
           />
         </div>
       </section>
