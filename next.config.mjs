@@ -2,7 +2,12 @@ import { withNextVideo } from "next-video/process";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["heeayulnhyor92wd.public.blob.vercel-storage.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "heeayulnhyor92wd.public.blob.vercel-storage.com",
+      },
+    ],
   },
 };
 

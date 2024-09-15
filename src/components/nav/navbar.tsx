@@ -3,7 +3,9 @@
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "../ui/button";
@@ -39,33 +41,36 @@ const SideNavbar = () => {
         <AnimatedHamburger isOpen={isOpen} />
       </SheetTrigger>
       <SheetContent side={"top"} className="bg-white/80 backdrop-blur-md">
-        <SheetHeader>
-          <NavigationMenu className="pb-10 border-b border-b-gray-800">
-            <NavigationMenuList className="flex flex-col  items-start gap-7 md:gap-5 text-3xl md:text-xl">
-              <NavigationMenuItem className="hover:text-[--accent-500] transition-all">
-                <Link href="/corporate">Corporate</Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem className="hover:text-[--accent-500] transition-all">
-                <Link href="/services">Services</Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem className="hover:text-[--accent-500] transition-all">
-                <Link href="/hr">Human Resources</Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem className="hover:text-[--accent-500] transition-all">
-                <Link href="/announcements"> Announcements</Link>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
-          <section className="flex flex-col pt-7 gap-10">
-            <div className="w-min">
-              <NavLanguage />
-            </div>
+        <SheetTitle>
+          <SheetHeader>
+            <SheetDescription></SheetDescription>
+            <NavigationMenu className="pb-10 border-b border-b-gray-800">
+              <NavigationMenuList className="flex flex-col  items-start gap-7 md:gap-5 text-3xl md:text-xl">
+                <NavigationMenuItem className="hover:text-[--accent-500] transition-all">
+                  <Link href="/corporate">Corporate</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem className="hover:text-[--accent-500] transition-all">
+                  <Link href="/services">Services</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem className="hover:text-[--accent-500] transition-all">
+                  <Link href="/hr">Human Resources</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem className="hover:text-[--accent-500] transition-all">
+                  <Link href="/announcements"> Announcements</Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+            <section className="flex flex-col pt-7 gap-10">
+              <div className="w-min">
+                <NavLanguage />
+              </div>
 
-            <Button variant="default" size={"lg"} className="md:w-min">
-              Contact
-            </Button>
-          </section>
-        </SheetHeader>
+              <Button variant="default" size={"lg"} className="md:w-min">
+                Contact
+              </Button>
+            </section>
+          </SheetHeader>
+        </SheetTitle>
       </SheetContent>
     </Sheet>
   );
