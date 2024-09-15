@@ -14,7 +14,7 @@ type ImageSectionProps = {
 const ImageSection = (params: ImageSectionProps) => {
   return (
     <>
-      <section className="flex items-center h-full w-full gap-[96px] lg:gap-[128px] xl:gap-[196px] pl-5 sm:pl-20 2xl:pl-44">
+      <section className="flex items-center h-full w-full gap-[64px] lg:gap-[96px] xl:gap-[196px] pl-5 sm:pl-20 2xl:pl-44">
         <TextBlock
           head={params.head}
           title={params.title}

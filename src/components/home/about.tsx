@@ -1,29 +1,6 @@
 import { Building2, MapPinned, Send, Users } from "lucide-react";
 import ImageSection from "../ui/image-section";
 
-const Vector = () => {
-  return (
-    <>
-      <svg
-        className="absolute w-screen top-0 -translate-y-20"
-        width="1920"
-        height="162"
-        viewBox="0 0 1920 162"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M2254 0H-334V161.354H2254V0.000228882V0ZM2254 0.000228882C1394.06 74.3919 525.958 74.1996 -334 2.30346e-05L2254 0.000228882Z"
-          fill="white"
-          className="w-screen"
-        />
-      </svg>
-    </>
-  );
-};
-
 const Numbers = () => {
   return (
     <>
@@ -58,10 +35,9 @@ const HomeAbout = () => {
   return (
     <>
       <section
-        className="relative flex w-full lg:py-[196px] xl:py-[256px] 2xl:py-[384px] bg-[--background]"
+        className="relative flex w-full h-min rounded-t-3xl lg:py-[196px] xl:py-[256px] 2xl:py-[384px] bg-[--background]"
         style={{ zIndex: 2 }}
       >
-        <Vector />
         <ImageSection
           head="About"
           title="We’re Here for Customer Satisfaction"

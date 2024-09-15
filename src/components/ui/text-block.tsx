@@ -13,7 +13,7 @@ type TextBlockProps = {
 const TextBlockContent = (params: { content: string }) => {
   return (
     <>
-      <p className="text-[--foreground] opacity-90 dark:opacity-100 text-xl font-light">
+      <p className="text-[--foreground] opacity-90 lg:text-lg dark:opacity-100 text-xl font-light">
         {params.content}
       </p>
     </>
@@ -34,7 +34,7 @@ const TextBlockHead = (params: { head: string }) => {
   return (
     <>
       <h5
-        className="text-[--accent] font-medium text-3xl underline"
+        className="text-[--accent] font-medium text-xl xl:text-3xl underline"
         style={{ fontVariant: "small-caps" }}
       >
         <span className="font-normal">{params.head[0]}</span>
@@ -47,7 +47,7 @@ const TextBlockHead = (params: { head: string }) => {
 const TextBlock = (params: TextBlockProps) => {
   return (
     <>
-      <div className=" flex flex-col gap-9 w-2/3 lg:w-1/3">
+      <div className=" flex flex-col gap-9 w-1/2 xl:w-1/3">
         <div className="flex flex-col gap-6">
           <TextBlockHead head={params.head} />
           <TextBlockTitle title={params.title} />
