@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const useDarkMode = () => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
     const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
@@ -17,7 +17,7 @@ const useDarkMode = () => {
     return () => matchMedia.removeEventListener("change", handleChange);
   }, []);
 
-  return isDarkMode;
+  return isDarkMode ? "dark" : "light";
 };
 
 export default useDarkMode;

@@ -19,8 +19,9 @@ import {
 import NavCard from "./card";
 import SideNavbar from "./navbar";
 
-import { ArrowRight, ChevronDown, Sidebar } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import NavLanguage from "./language";
+import { Suspense, useEffect } from "react";
 
 type LinkProps = {
   href: string;
@@ -41,17 +42,19 @@ const Nav = () => {
       >
         <header className="flex flex-row items-center justify-between">
           <div className="flex w-[157px] xl:w-[237px]">
-            <Image
-              src={
-                isDarkMode
-                  ? "/assets/images/logo_white.svg"
-                  : "/assets/images/logo_red.svg"
-              }
-              alt="logo"
-              width={237}
-              height={56}
-              priority
-            />
+            <Link href="/">
+              <Image
+                src={
+                  isDarkMode === "dark"
+                    ? "https://heeayulnhyor92wd.public.blob.vercel-storage.com/logo_white-FLtnw2hOw0cBLnUtcqODcqa9lat66x.svg"
+                    : "https://heeayulnhyor92wd.public.blob.vercel-storage.com/logo_red-Bhejkt9GEdoychqdXmBaWLt3vYG9de.svg"
+                }
+                alt="logo"
+                width={237}
+                height={56}
+                priority
+              />
+            </Link>
           </div>
 
           <NavigationMenu className="hidden xl:block">
