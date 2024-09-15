@@ -18,7 +18,7 @@ const NavLanguage = () => {
     <div>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="language">
+          <Button variant="language" size={"lg"}>
             Language {language === "en" ? "🇬🇧" : "🇹🇷"}
             <ChevronDown strokeWidth={1.5} />
           </Button>

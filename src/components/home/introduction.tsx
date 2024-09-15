@@ -10,11 +10,11 @@ const HomeIntroduction = () => {
         style={{ zIndex: 3 }}
       >
         <div className="flex flex-col max-w gap-10">
-          <div className="flex flex-col gap-5">
-            <h1 className="text-4xl xl:text-6xl min-[2000px]:text-8xl font-bold text-white">
+          <div className="flex flex-col gap-5 ">
+            <h1 className="text-4xl xl:text-5xl min-[2000px]:text-8xl font-bold text-white transition-all duration-1000">
               We make a difference with our professional team.
             </h1>
-            <p className="text-white tracking-wide font-light text-xl min-[2000px]:text-3xl">
+            <p className="text-white tracking-wide font-light text-xl min-[2000px]:text-3xl transition-all duration-1000">
               Professionalism, respect, teamwork, dynamism, and innovation are
               our core values. While using resources efficiently, we adhere to
               the highest security standards in confidentiality. We act with the
@@ -22,7 +22,7 @@ const HomeIntroduction = () => {
             </p>
           </div>
 
-          <Button variant="default" size={"lg"} className="w-min gap-5">
+          <Button variant="default" className="w-min gap-5">
             Services
             <ArrowUpRight size={28} strokeWidth={1.5} />
           </Button>

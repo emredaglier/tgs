@@ -29,7 +29,6 @@ const ImageSection = (params: ImageSectionProps) => {
             alt={params.title}
             width={1920}
             height={1080}
-            layout="responsive"
             className="rounded-tl-[128px] rounded-br-[128px]"
           />
         </div>

@@ -10,7 +10,7 @@ const Card = React.forwardRef<
     ref={ref}
     className={cn(
       //add accent gradient
-      "bg-transparent hover:bg-[--accent-100] dark:hover:bg-[--accent-700] text-card-foreground transition-colors",
+      "bg-transparent  text-card-foreground transition-colors",
       className
     )}
     {...props}
