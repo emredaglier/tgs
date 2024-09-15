@@ -1,7 +1,5 @@
 "use client";
 
-import NextLink from "next/link";
-
 // Components
 import margin from "../margin";
 import SideNavbar from "./navbar";

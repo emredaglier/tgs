@@ -1,5 +1,5 @@
-"use client";
+//"use client";
 
-import { getCookies, setCookie, deleteCookie, getCookie } from "cookies-next";
+//import { getCookies, setCookie, deleteCookie, getCookie } from "cookies-next";
 
-const Cookie = () => {};
+//const Cookie = () => {};
