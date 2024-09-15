@@ -23,7 +23,7 @@ const ImageSection = (params: ImageSectionProps) => {
           buttonHref={params.buttonHref}
           numbers={params.numbers}
         />
-        <div className="flex w-1/3 lg:w-2/3 h-full ">
+        <div className="flex h-full md:w-4/5 lg:w-2/3 2xl:w-2/3">
           <Image
             src={params.imageUrl}
             alt={params.title}
