@@ -1,11 +1,12 @@
 const Loading = () => {
   return (
     <>
-      <div
-        className="absolute flex w-screen h-screen bg-[--background] text-[--foreground] justify-center items-center"
-        style={{ zIndex: 99 }}
-      >
-        <h1>Loading</h1>
+      <div className="flex bg-[--background] w-screen h-screen items-center justify-center">
+        <div className="flex space-x-2 justify-center items-center bg-[--background] h-screen">
+          <div className="h-8 w-8 bg-[--foreground] rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+          <div className="h-8 w-8 bg-[--foreground] rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+          <div className="h-8 w-8 bg-[--foreground] rounded-full animate-bounce"></div>
+        </div>
       </div>
     </>
   );

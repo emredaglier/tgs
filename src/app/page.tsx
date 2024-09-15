@@ -1,5 +1,11 @@
+/**
+ * TGS | Turkish Ground Services unofficial next.js version
+ *
+ * author => @emredaglier <daglier.com>
+ *
+ */
+
 import MainApp from "../components/app";
-import type { Metadata } from "next";
 
 export const metadata = {
   title: "TGS | Turkish Ground Services",

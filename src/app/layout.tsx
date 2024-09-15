@@ -1,7 +1,7 @@
+// Analytics & Speed Insights by Vercel
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -17,8 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} antialiased`}>
+    <html
+      lang="en"
+      className="scrollbar scrollbar-thumb-[#c90119] scrollbar-track-[--background] dark:scrollbar-thumb-[--foreground] dark:scrollbar-track-[--background]"
+    >
+      {/* This lang attribute will be changed by language selector in the later updates */}
+      <body className={`${geistSans.variable}`}>
         {children}
         <Analytics />
         <SpeedInsights />

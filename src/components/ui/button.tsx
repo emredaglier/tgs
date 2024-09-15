@@ -23,7 +23,8 @@ const buttonVariants = cva(
           "text-primary underline-offset-4 hover:underline dark:text-white transition-all duration-1000",
       },
       size: {
-        default: "text-md xl:text-xl 2xl:text-2xl h-11 px-8 2xl:px-10 2xl:h-16",
+        default:
+          "text-md  h-11 px-8 min-[2000px]:px-10 min-[2000px]:h-16 min-[2000px]:text-2xl min-[2000px]:text-xl",
         sm: "h-9 px-3",
         lg: "h-11 px-8",
         icon: "h-10 w-10",
