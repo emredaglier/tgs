@@ -14,9 +14,9 @@ const Numbers = () => {
         >
           <Building2 strokeWidth={1.25} color="white" size={48} />
           <span className="flex flex-col items-center">
-            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
+            <span className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
               200+
-            </h3>
+            </span>
             <p className="text-sm hover:pointer-events-none">Companies</p>
           </span>
         </div>
@@ -28,9 +28,9 @@ const Numbers = () => {
         >
           <MapPinned strokeWidth={1.25} color="white" size={48} />
           <span className="flex flex-col items-center">
-            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
+            <span className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
               8B+
-            </h3>
+            </span>
             <p className="text-sm hover:pointer-events-none">Flights</p>
           </span>
         </div>
@@ -42,9 +42,9 @@ const Numbers = () => {
         >
           <Users strokeWidth={1.25} size={48} color="white" />
           <span className="flex flex-col items-center">
-            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
+            <span className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
               17.000+
-            </h3>
+            </span>
             <p className="text-sm hover:pointer-events-none">Employee</p>
           </span>
         </div>
