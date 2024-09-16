@@ -67,6 +67,7 @@ const HomeAbout = () => {
             numbers={<Numbers />}
             imageUrl="https://heeayulnhyor92wd.public.blob.vercel-storage.com/phd-1as1IM2ZvJmXML9BJDQThpX2ZG0zTc.png"
             bgDark={false}
+            reverse={false}
           />
           <HomePartners />
         </div>
