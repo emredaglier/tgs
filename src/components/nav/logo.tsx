@@ -7,15 +7,23 @@ type LinkProps = {
   children: React.ReactNode;
 };
 
+type isScrolledProps = {
+  isScrolled: boolean;
+};
+
 const Link = ({ href, ...props }: LinkProps) => {
   return <NextLink href={href} className="NavigationMenuLink" {...props} />;
 };
 
-const NavLogo = () => {
+const NavLogo: React.FC<isScrolledProps> = ({ isScrolled }) => {
   const isDarkMode = useDarkMode();
   return (
     <>
-      <div className="flex w-[157px] xl:w-[237px]">
+      <div
+        className={`flex transition-all duration-1000 ${
+          isScrolled ? "w-[157px]" : "w-[157px] xl:w-[237px]"
+        }`}
+      >
         <Link href="/">
           <Image
             src={

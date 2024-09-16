@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import margin from "../margin";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const HomeIntroduction = () => {
   return (
@@ -21,10 +22,12 @@ const HomeIntroduction = () => {
             </p>
           </div>
 
-          <Button variant="default" className="w-min gap-5">
-            Services
-            <ArrowUpRight size={28} strokeWidth={1.5} />
-          </Button>
+          <Link href="/services">
+            <Button variant="default" className="w-min gap-5">
+              Services
+              <ArrowUpRight size={28} strokeWidth={1.5} />
+            </Button>
+          </Link>
         </div>
       </div>
     </>

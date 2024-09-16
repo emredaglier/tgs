@@ -35,10 +35,10 @@ const TextBlockHead = (params: { head: string }) => {
     <>
       <Link href={params.head.toLowerCase()} className="w-min">
         <h5
-          className="text-[--accent]  dark:text-[--accent-600] font-medium text-3xl md:text-xl xl:text-3xl underline transition-all duration-1000"
+          className="text-[--accent]  dark:text-[--accent-600] font-normal text-3xl md:text-xl xl:text-3xl underline transition-all duration-1000"
           style={{ fontVariant: "small-caps" }}
         >
-          <span className="font-normal">{params.head[0]}</span>
+          <span className="font-light">{params.head[0]}</span>
           {params.head.substring(1)}
         </h5>
       </Link>
