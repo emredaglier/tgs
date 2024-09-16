@@ -56,12 +56,7 @@ const Numbers = () => {
 const HomeAbout = () => {
   return (
     <>
-      <section className="relative z-[2] overflow-hidden flex flex-col w-full h-min  bg-[--background]">
-        <div className="absolute flex w-[300px] h-[300px] min-[2000px]:translate-y-[150%] xl:translate-y-[100%] translate-y-[50%] translate-x-[150px] bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"></div>
-        <div className="absolute right-0 flex w-[600px] h-[600px] min-[2000px]:translate-y-[-150%] opacity-10 xl:opacity-50 xl:translate-y-[-100%] translate-y-[-50%] translate-x-[-150px] bg-transparent dark:bg-[--accent-400] dark:blur-[200px] z-[1] transition-all duration-1000"></div>
-        <div className="absolute bottom-0 flex w-[300px] h-[300px] min-[2000px]:translate-y-[150%]  xl:translate-y-[100%] translate-y-[50%] translate-x-[150px] bg-transparent dark:bg-[--accent] dark:blur-[200px] z-[1] transition-all duration-1000"></div>
-        <div className="absolute right-0 flex w-[600px] h-[600px] min-[2000px]:translate-y-[300%] opacity-10 md:opacity-50 xl:translate-y-[150%] translate-y-[50%] translate-x-[150px] bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"></div>
-
+      <section className="relative z-[2] overflow-hidden flex flex-col w-full h-min ">
         <div className="flex flex-col gap-40 sm:gap-20 xl:gap-40 min-[2000px]:gap-56 py-[196px] sm:py-[96px] lg:py-[196px] xl:py-[256px] 2xl:py-[384px] z-[1]">
           <ImageSection
             head="About"
@@ -71,6 +66,7 @@ const HomeAbout = () => {
             buttonHref=""
             numbers={<Numbers />}
             imageUrl="https://heeayulnhyor92wd.public.blob.vercel-storage.com/phd-1as1IM2ZvJmXML9BJDQThpX2ZG0zTc.png"
+            bgDark={false}
           />
           <HomePartners />
         </div>

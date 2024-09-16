@@ -7,7 +7,7 @@ import Loading from "../loading";
 const Nav = dynamic(() => import("../nav/nav"), { ssr: false });
 const HomeIntroduction = dynamic(() => import("./introduction"));
 const Video = dynamic(() => import("./video"));
-const HomeAbout = dynamic(() => import("./about"));
+const HomeContent = dynamic(() => import("./content"));
 
 const HomeEntry = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +34,7 @@ const HomeEntry = () => {
           <Video />
           <Nav />
           <HomeIntroduction />
-          <HomeAbout />
+          <HomeContent />
         </>
       )}
     </>

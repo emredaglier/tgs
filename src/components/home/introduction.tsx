@@ -7,7 +7,7 @@ const HomeIntroduction = () => {
   return (
     <>
       <div
-        className={`absolute font-geist flex flex-col lg:w-2/3 xl:w-1/2 h-screen justify-center ${margin} z-[3]`}
+        className={`absolute font-geist flex flex-col lg:w-2/3 xl:w-1/2 h-screen justify-center ${margin} z-[6]`}
       >
         <div className="flex flex-col max-w gap-10">
           <div className="flex flex-col gap-5 ">
@@ -23,7 +23,7 @@ const HomeIntroduction = () => {
           </div>
 
           <Link href="/services">
-            <Button variant="default" className="w-min gap-5">
+            <Button variant="defaultNoborder" className="w-min gap-5">
               Services
               <ArrowUpRight size={28} strokeWidth={1.5} />
             </Button>
