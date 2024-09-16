@@ -1,5 +1,4 @@
 import ImageSection from "@/components/ui/image-section";
-import Link from "next/link";
 
 const HomeServices = () => {
   const Services = [
