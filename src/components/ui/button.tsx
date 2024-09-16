@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[--accent] text-primary-foreground hover:border hover:border-[--accent] hover:bg-white hover:text-[--accent] hover:shadow transition-all dark:hover:opacity-100 dark:hover:bg-white dark:hover:text-[--accent]",
+          "bg-[--accent] text-primary-foreground hover:border hover:border-[--accent] dark:hover:border-0 hover:bg-white hover:text-[--accent] hover:shadow transition-all dark:hover:opacity-100 dark:hover:bg-white dark:hover:text-[--accent]",
         defaultNoborder:
           "bg-[--accent] text-primary-foreground hover:bg-white hover:text-[--accent] hover:shadow transition-all dark:hover:opacity-100 dark:hover:bg-white dark:hover:text-[--accent]",
 

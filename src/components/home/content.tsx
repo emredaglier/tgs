@@ -4,10 +4,11 @@ import HomeServices from "./services/services";
 const HomeContent = () => {
   return (
     <>
-      <section className="relative w-full h-full flex flex-col ">
+      <main className="relative w-full h-full flex flex-col ">
         <div
           className="absolute flex w-[300px] h-[300px]
         min-[2000px]:translate-y-[150%] xl:translate-y-[100%] translate-y-[50%] translate-x-[150px]
+        xl:opacity-50 opacity-10
         bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"
         ></div>
 
@@ -34,7 +35,7 @@ const HomeContent = () => {
 
         <HomeAbout />
         <HomeServices />
-      </section>
+      </main>
     </>
   );
 };

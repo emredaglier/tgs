@@ -29,13 +29,13 @@ const TextBlockContent = (params: { content: string; bgDark: boolean }) => {
 const TextBlockTitle = (params: { title: string; bgDark: boolean }) => {
   return (
     <>
-      <h1
+      <span
         className={` ${
           !params.bgDark ? "text-[--foreground]" : "text-white"
         } transition-all duration-1000 font-medium text-4xl md:text-2xl lg:text-4xl xl:text-5xl  2xl:text-7xl min-[2000px]:text-8xl`}
       >
         {params.title}
-      </h1>
+      </span>
     </>
   );
 };
@@ -44,7 +44,7 @@ const TextBlockHead = (params: { head: string; bgDark: boolean }) => {
   return (
     <>
       <Link href={params.head.toLowerCase()} className="w-min">
-        <h5
+        <span
           className={`${
             !params.bgDark
               ? "text-[--accent] dark:text-[--accent-600]"
@@ -54,7 +54,7 @@ const TextBlockHead = (params: { head: string; bgDark: boolean }) => {
         >
           <span className="font-light">{params.head[0]}</span>
           {params.head.substring(1)}
-        </h5>
+        </span>
       </Link>
     </>
   );
