@@ -7,40 +7,44 @@ const Numbers = () => {
       <section className="flex flex-row w-full justify-between">
         <div
           className="flex flex-col rounded-tl-3xl hover:cursor-default hover:-translate-y-3
-         rounded-br-3xl py-2 justify-center items-center
-        w-[84px] h-[84px] lg:w-[96px] lg:h-[96px] 2xl:w-[120px] 2xl:h-[120px] min-[2000px]:w-[160px] min-[2000px]:h-[160px]
+        dark:hover:shadow-2xl dark:hover:shadow-[--accent-900] rounded-br-3xl py-2 justify-center items-center
+        w-[96px] h-[96px] md:w-[84px] md:h-[84px] lg:w-[96px] lg:h-[96px] 2xl:w-[120px] 2xl:h-[120px] min-[2000px]:w-[160px] min-[2000px]:h-[160px]
         transition-all duration-1000 bg-[--accent] text-white"
         >
           <Building2 strokeWidth={1.25} color="white" size={48} />
           <span className="flex flex-col items-center">
-            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold">200+</h3>
-            <p className="text-sm">Companies</p>
+            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
+              200+
+            </h3>
+            <p className="text-sm hover:pointer-events-none">Companies</p>
           </span>
         </div>
         <div
           className="flex flex-col rounded-tl-3xl hover:cursor-default hover:-translate-y-3
-         rounded-br-3xl py-2 justify-center items-center
-         w-[84px] h-[84px] lg:w-[96px] lg:h-[96px] 2xl:w-[120px] 2xl:h-[120px] min-[2000px]:w-[160px] min-[2000px]:h-[160px]
+        dark:hover:shadow-2xl dark:hover:shadow-[--accent-900] rounded-br-3xl py-2 justify-center items-center
+        w-[96px] h-[96px] md:w-[84px] md:h-[84px] lg:w-[96px] lg:h-[96px] 2xl:w-[120px] 2xl:h-[120px] min-[2000px]:w-[160px] min-[2000px]:h-[160px]
         transition-all duration-1000 bg-[--accent] text-white"
         >
           <MapPinned strokeWidth={1.25} color="white" size={48} />
           <span className="flex flex-col items-center">
-            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold">8B+</h3>
-            <p className="text-sm">Flights</p>
+            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
+              8B+
+            </h3>
+            <p className="text-sm hover:pointer-events-none">Flights</p>
           </span>
         </div>
         <div
           className="flex flex-col rounded-tl-3xl hover:cursor-default hover:-translate-y-3
-         rounded-br-3xl py-2 justify-center items-center
-         w-[84px] h-[84px] lg:w-[96px] lg:h-[96px] 2xl:w-[120px] 2xl:h-[120px] min-[2000px]:w-[160px] min-[2000px]:h-[160px]
+        dark:hover:shadow-2xl dark:hover:shadow-[--accent-900] rounded-br-3xl py-2 justify-center items-center
+        w-[96px] h-[96px] md:w-[84px] md:h-[84px] lg:w-[96px] lg:h-[96px] 2xl:w-[120px] 2xl:h-[120px] min-[2000px]:w-[160px] min-[2000px]:h-[160px]
         transition-all duration-1000 bg-[--accent] text-white"
         >
           <Users strokeWidth={1.25} size={48} color="white" />
           <span className="flex flex-col items-center">
-            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold">
+            <h3 className="text-sm lg:text-lg 2xl:text-xl font-bold hover:pointer-events-none">
               17.000+
             </h3>
-            <p className="text-sm">Employee</p>
+            <p className="text-sm hover:pointer-events-none">Employee</p>
           </span>
         </div>
       </section>
@@ -52,9 +56,9 @@ const HomeAbout = () => {
   return (
     <>
       <section className="relative z-[2] overflow-hidden flex w-full h-min rounded-t-3xl bg-[--background]">
-        <div className="absolute  flex w-[300px] h-[300px] translate-y-[500px] translate-x-[150px] bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"></div>
+        <div className="absolute  flex w-[300px] h-[300px] min-[2000px]:translate-y-[150%] xl:translate-y-[100%] translate-y-[50%] translate-x-[150px] bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"></div>
 
-        <div className="flex md:py-[96px] lg:py-[196px] xl:py-[256px] 2xl:py-[384px] z-[1]">
+        <div className="flex h-screen sm:h-auto py-[96px] lg:py-[196px] xl:py-[256px] 2xl:py-[384px] z-[1]">
           <ImageSection
             head="About"
             title="We’re Here for Customer Satisfaction"

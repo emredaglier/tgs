@@ -2,10 +2,7 @@ const HomeVideo = () => {
   return (
     <>
       <div className="relative h-[110vh] w-screen flex flex-col">
-        <div
-          className="absolute w-full h-full bg-black opacity-50"
-          style={{ zIndex: 1 }}
-        ></div>
+        <div className="absolute w-full h-full bg-black opacity-50 z-[1]"></div>
         <video
           src={
             "https://heeayulnhyor92wd.public.blob.vercel-storage.com/bg-loop-yI06O2DcPQfELDruZE5X367Olabk20"

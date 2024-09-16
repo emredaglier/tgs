@@ -13,7 +13,7 @@ type TextBlockProps = {
 const TextBlockContent = (params: { content: string }) => {
   return (
     <>
-      <p className="text-[--foreground] transition-all duration-1000 opacity-90 md:text-sm lg:text-lg dark:opacity-100 text-xl min-[2000px]:text-4xl font-light">
+      <p className="text-[--foreground] transition-all duration-1000 opacity-90 md:text-sm lg:text-lg dark:opacity-100 text-xl min-[2000px]:text-3xl font-light">
         {params.content}
       </p>
     </>
@@ -23,7 +23,7 @@ const TextBlockContent = (params: { content: string }) => {
 const TextBlockTitle = (params: { title: string }) => {
   return (
     <>
-      <h1 className="text-[--foreground] transition-all duration-1000 font-medium md:text-2xl lg:text-4xl xl:text-5xl  2xl:text-7xl min-[2000px]:text-8xl">
+      <h1 className="text-[--foreground] transition-all duration-1000 font-medium text-4xl md:text-2xl lg:text-4xl xl:text-5xl  2xl:text-7xl min-[2000px]:text-8xl">
         {params.title}
       </h1>
     </>
@@ -35,7 +35,7 @@ const TextBlockHead = (params: { head: string }) => {
     <>
       <Link href={params.head.toLowerCase()} className="w-min">
         <h5
-          className="text-[--accent]  dark:text-[--accent-600] font-medium text-xl xl:text-3xl underline transition-all duration-1000"
+          className="text-[--accent]  dark:text-[--accent-600] font-medium text-3xl md:text-xl xl:text-3xl underline transition-all duration-1000"
           style={{ fontVariant: "small-caps" }}
         >
           <span className="font-normal">{params.head[0]}</span>
