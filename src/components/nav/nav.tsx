@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,12 +28,14 @@ const Nav = () => {
   return (
     <>
       <div
-        className={`fixed w-screen z-50 transition-transform duration-1000 bg-white/90 backdrop-blur-md dark:bg-[--background] border-b dark:border-b-gray-800 text-[--foreground] ${margin} ${
-          isScrolled ? "py-[20px] xl:py-[10px]" : "py-[20px]"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className={`fixed w-screen z-50 transition-all duration-1000 bg-white/90 backdrop-blur-md dark:bg-[--background] border-b dark:border-b-gray-800 text-[--foreground] ${margin} ${
+          isScrolled ? "py-[20px] xl:py-[10px] hover:py-[20px]" : "py-[20px]"
         } `}
       >
         <header className="flex flex-row items-center justify-between">
-          <NavLogo isScrolled={isScrolled} />
+          <NavLogo isScrolled={isScrolled} isHover={isHovered} />
           <NavMenu />
           <Contact />
           <SideNavbar />
