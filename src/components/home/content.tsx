@@ -8,14 +8,14 @@ const HomeContent = () => {
         <div
           className="absolute flex w-[300px] h-[300px]
         min-[2000px]:translate-y-[150%] xl:translate-y-[100%] translate-y-[50%] translate-x-[150px]
-        xl:opacity-50 opacity-10
+        xl:opacity-30 opacity-10
         bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"
         ></div>
 
         <div
           className="absolute right-0 flex w-[600px]
         h-[600px] min-[2000px]:translate-y-[-100%] xl:translate-y-[-50%] translate-y-[50%] translate-x-[150px]
-        xl:opacity-50 opacity-10
+        xl:opacity-30 opacity-10
         bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"
         ></div>
 
@@ -29,7 +29,7 @@ const HomeContent = () => {
         <div
           className="absolute bottom-0 flex w-[600px] h-[600px]
         min-[2000px]:translate-y-[-100%] xl:translate-y-[-100%] translate-y-[-5%] translate-x-[150px]
-        xl:opacity-50 opacity-10
+        xl:opacity-30 opacity-10
         bg-transparent dark:bg-[--accent-900] dark:blur-[200px] z-[1] transition-all duration-1000"
         ></div>
 

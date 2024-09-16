@@ -1,4 +1,5 @@
 import ImageSection from "@/components/ui/image-section";
+import Link from "next/link";
 
 const HomeServices = () => {
   const Services = [
@@ -66,7 +67,7 @@ const HomeServices = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-40 sm:gap-20 xl:gap-40 min-[2000px]:gap-56 pb-[96px] xl:pb-[128px] 2xl:pb-[256px] z-[1]">
+      <div className="flex flex-col gap-40 sm:gap-40 xl:gap-60 min-[2000px]:gap-56 pb-[96px] xl:pb-[128px] 2xl:pb-[256px] z-[1]">
         {Services.map((service) => (
           <ImageSection
             key={service.id}
@@ -79,6 +80,7 @@ const HomeServices = () => {
             imageUrl={service.image}
             bgDark={service.bgDark}
             reverse={service.reverse}
+            imgHide={false}
           />
         ))}
       </div>
