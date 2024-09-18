@@ -35,7 +35,7 @@ const SignIn = () => {
       await signInWithEmailAndPassword(auth, email, password);
       router.push("/dashboard"); // Redirect on successful sign-in
     } catch (err) {
-      setError("Failed to sign in. Please check your credentials."); // Show error if sign-in fails
+      setError("Failed to sign in. Please check your credentials." + err); // Show error if sign-in fails
       setLoading(false); // Stop loading if sign-in fails
     }
   };
