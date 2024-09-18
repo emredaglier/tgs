@@ -5,7 +5,7 @@ const HomeVideo = () => {
         <div className="absolute w-full h-full bg-black opacity-50 z-[1]"></div>
         <video
           src={
-            "https://heeayulnhyor92wd.public.blob.vercel-storage.com/bg-loop-yI06O2DcPQfELDruZE5X367Olabk20"
+            "https://heeayulnhyor92wd.public.blob.vercel-storage.com/bg-loop-dE28GWOI3jB6tzjqYCLlzX0vLgndVL"
           }
           className="w-full h-full object-cover"
           autoPlay
