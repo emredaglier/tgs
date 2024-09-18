@@ -5,10 +5,18 @@ import { onAuthStateChanged, signOut } from "firebase/auth"; // Import signOut f
 import { useRouter } from "next/navigation";
 import { auth } from "@/firebase/config"; // Adjust the path if necessary
 import Loading from "@/components/loading";
+import MDXEditor from "./editor";
+import ReactMarkdown from "react-markdown";
+
+interface Announcement {
+  title: string;
+  content: string;
+  image: string;
+}
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState(String);
+  const [data, setData] = useState<Announcement[]>([]);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const router = useRouter();
 
@@ -26,12 +34,10 @@ const Dashboard = () => {
 
         if (response.ok) {
           const result = await response.json();
-          setData(result[0].title);
+          setData(result);
         } else {
           console.error("Error fetching data:", response.statusText);
         }
-
-        //
 
         setLoading(false);
       } else {
@@ -54,18 +60,32 @@ const Dashboard = () => {
     return <Loading />;
   }
 
+  console.log(data);
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[--background]">
-      <h1 className="text-3xl font-bold">Welcome to the Dashboard</h1>
-      <p className="mt-4">Hello {data}</p>
+    <main className="flex flex-col">
+      {" "}
+      <MDXEditor />
       <button
         onClick={handleLogout}
         className="px-4 py-2 mt-6 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
       >
         Logout
       </button>
-    </div>
+      <ReactMarkdown>{data[1].content}</ReactMarkdown>
+    </main>
   );
 };
 
 export default Dashboard;
+
+/*
+<button
+        onClick={handleLogout}
+        className="px-4 py-2 mt-6 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
+      >
+        Logout
+      </button>
+
+
+*/

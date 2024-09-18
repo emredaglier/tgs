@@ -1,4 +1,4 @@
-import { getData } from "@/drizzle/db"; // Adjust path to your getData function
+import db from "@/drizzle/db"; // Adjust path to your getData function
 import { verifyIdToken } from "@/firebase/admin"; // Import Firebase Admin
 import { NextRequest, NextResponse } from "next/server";
 
@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
     const decodedToken = await verifyIdToken(idToken);
 
     if (decodedToken.uid === process.env.FIREBASE_ADMIN_UID) {
-      const data = await getData();
+      const data = await db.getData();
 
       return new NextResponse(JSON.stringify(data), {
         status: 200,
