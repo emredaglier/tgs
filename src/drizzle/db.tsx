@@ -16,13 +16,3 @@ const insertData = async (data: any) => {
 const out = { getData, insertData };
 
 export default out;
-
-/* EXPERIMENTAL
-export const insert_TEST = async () => {
-  await db.insert(schema.Announcements).values({
-    title: "TEST",
-    content: "TEST",
-    image: "TEST",
-  });
-};
-*/
