@@ -23,13 +23,16 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ```
 
 [] - Language support with cookie integration
-[] - Database integration for announcements & news
+[🔄] - Database integration for announcements & news
 [] - Admin panel for interactive content editor
+[] - Auth for admin panel
 
 UI fixes ------
 [🔄] - Animations
 [🔄] - Home page
 [🔄] - Fully responsive
+    [✅] - Home Page
+    [] - Announcements Page
 [] - Corporate page
 [] - Services page
 [] - HR page
