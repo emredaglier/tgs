@@ -11,13 +11,29 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(String);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [user, setUser] = useState<User | null>(null);
   const router = useRouter();
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
-        setUser(user);
+        const idToken = await user.getIdToken(); // Get the Firebase ID token
+
+        const response = await fetch("/api/data", {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${idToken}`, // Send the token in the Authorization header
+          },
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          setData(result[0].title);
+        } else {
+          console.error("Error fetching data:", response.statusText);
+        }
+
+        //
+
         setLoading(false);
       } else {
         router.push("/login");
@@ -26,15 +42,6 @@ const Dashboard = () => {
 
     return () => unsubscribe();
   }, [router]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const pholder = await getData();
-      setData(pholder[0].title);
-    };
-
-    fetchData();
-  }, []);
 
   const handleLogout = async () => {
     try {
