@@ -6,6 +6,7 @@
  */
 
 import MainApp from "../components/app";
+//import { getData } from "@/drizzle/db";
 
 export const metadata = {
   title: "TGS | Turkish Ground Services",
