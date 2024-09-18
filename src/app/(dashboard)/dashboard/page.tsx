@@ -10,6 +10,7 @@ import { getData } from "@/drizzle/db";
 const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(String);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [user, setUser] = useState<User | null>(null);
   const router = useRouter();
 
@@ -51,7 +52,7 @@ const Dashboard = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[--background]">
       <h1 className="text-3xl font-bold">Welcome to the Dashboard</h1>
-      <p className="mt-4">Hello</p>
+      <p className="mt-4">Hello {data}</p>
       <button
         onClick={handleLogout}
         className="px-4 py-2 mt-6 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
