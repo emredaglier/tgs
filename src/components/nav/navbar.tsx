@@ -40,7 +40,7 @@ const SideNavbar = () => {
       <SheetTrigger className="block xl:hidden" onClick={toggleMenu}>
         <AnimatedHamburger isOpen={isOpen} />
       </SheetTrigger>
-      <SheetContent side={"top"} className="bg-white/80 backdrop-blur-md">
+      <SheetContent side={"top"} className="bg-[--background]">
         <SheetTitle>
           <SheetHeader>
             <SheetDescription></SheetDescription>

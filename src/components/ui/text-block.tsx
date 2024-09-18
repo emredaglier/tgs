@@ -10,6 +10,7 @@ type TextBlockProps = {
   buttonHref: string;
   numbers: React.ReactNode;
   bgDark: boolean;
+  wFull: boolean;
 };
 
 const TextBlockContent = (params: { content: string; bgDark: boolean }) => {
@@ -63,7 +64,11 @@ const TextBlockHead = (params: { head: string; bgDark: boolean }) => {
 const TextBlock = (params: TextBlockProps) => {
   return (
     <>
-      <div className=" flex flex-col gap-4 xl:gap-7 md:w-3/4 lg:w-2/3 2xl:w-1/3">
+      <div
+        className={`flex flex-col gap-4 xl:gap-7 ${
+          params.wFull ? "w-full" : "md:w-3/4 lg:w-2/3 2xl:w-1/3"
+        } `}
+      >
         <div className="flex flex-col gap-6">
           <TextBlockHead head={params.head} bgDark={params.bgDark} />
           <TextBlockTitle title={params.title} bgDark={params.bgDark} />

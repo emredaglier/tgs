@@ -80,6 +80,7 @@ const HomeServices = () => {
             bgDark={service.bgDark}
             reverse={service.reverse}
             imgHide={false}
+            wFull={false}
           />
         ))}
       </div>

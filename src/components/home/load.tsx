@@ -8,6 +8,7 @@ const Nav = dynamic(() => import("../nav/nav"), { ssr: false });
 const HomeIntroduction = dynamic(() => import("./introduction"));
 const Video = dynamic(() => import("./video"));
 const HomeContent = dynamic(() => import("./content"));
+const Footer = dynamic(() => import("../footer"));
 
 const HomeEntry = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,6 +21,7 @@ const HomeEntry = () => {
         import("./video"),
         import("./about"),
       ]);
+
       setIsLoading(false);
     };
     loadComponents();
@@ -35,6 +37,7 @@ const HomeEntry = () => {
           <Nav />
           <HomeIntroduction />
           <HomeContent />
+          <Footer />
         </>
       )}
     </>

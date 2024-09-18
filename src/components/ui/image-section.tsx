@@ -12,6 +12,7 @@ type ImageSectionProps = {
   bgDark: boolean;
   reverse: boolean;
   imgHide: boolean;
+  wFull: boolean;
 };
 
 const ImageSection = (params: ImageSectionProps) => {
@@ -38,6 +39,7 @@ const ImageSection = (params: ImageSectionProps) => {
           buttonHref={params.buttonHref}
           numbers={params.numbers}
           bgDark={params.bgDark}
+          wFull={params.wFull}
         />
         <div
           className={`${
