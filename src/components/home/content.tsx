@@ -4,7 +4,7 @@ import HomeServices from "./services/services";
 const HomeContent = () => {
   return (
     <>
-      <main className="relative w-full h-full flex flex-col bg-[--background] transition-colors duration-1000">
+      <div className="relative w-full h-full flex flex-col bg-[--background] transition-colors duration-1000">
         <div
           className="absolute flex w-[300px] h-[300px]
         min-[2000px]:translate-y-[150%] xl:translate-y-[100%] translate-y-[50%] translate-x-[150px]
@@ -35,7 +35,7 @@ const HomeContent = () => {
 
         <HomeAbout />
         <HomeServices />
-      </main>
+      </div>
     </>
   );
 };
