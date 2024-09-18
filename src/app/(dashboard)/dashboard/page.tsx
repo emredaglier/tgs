@@ -38,7 +38,6 @@ const Dashboard = () => {
         router.push("/login");
       }
     });
-
     return () => unsubscribe();
   }, [router]);
 
