@@ -5,8 +5,8 @@ import Link from "next/link";
 
 type FooterNavProps = {
   head: string;
-  nav: Array<String>;
-  link: Array<String>;
+  nav: Array<string>;
+  link: Array<string>;
 };
 
 const FooterNav = ({ head, nav, link }: FooterNavProps) => {
@@ -18,9 +18,8 @@ const FooterNav = ({ head, nav, link }: FooterNavProps) => {
         </h1>
         <ul className="flex flex-col gap-2">
           {nav.map((item, index) => (
-            <li>
+            <li key={index}>
               <Link
-                key={index}
                 href={`${link[index]}`}
                 className="flex flex-row items-center text-lg font-light gap-3 hover:underline opacity-75 dark:opacity-50"
               >
@@ -129,7 +128,7 @@ const Footer = () => {
               Always operating with a commitment to high-quality service, TGS
               works with the pride of being one of the leading ground handling
               companies in Turkey and the world, enhancing the strength of the
-              world's largest airlines.
+              world&apos;s largest airlines.
             </p>
             <div className="flex flex-row gap-6">
               <Instagram />
