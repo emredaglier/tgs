@@ -12,18 +12,20 @@ export async function GET(request: NextRequest) {
   const idToken = authHeader.split("Bearer ")[1]; // Extract the token
 
   try {
-    // Verify the token with Firebase Admin
     const decodedToken = await verifyIdToken(idToken);
 
-    // If token is valid, fetch data
-    const data = await getData();
+    if (decodedToken.uid === process.env.FIREBASE_ADMIN_UID) {
+      const data = await getData();
 
-    return new NextResponse(JSON.stringify(data), {
-      status: 200,
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+      return new NextResponse(JSON.stringify(data), {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    }
+
+    // If token is valid, fetch data
   } catch (error) {
     console.error("Error verifying ID token:", error);
     return new NextResponse("Unauthorized", { status: 401 });

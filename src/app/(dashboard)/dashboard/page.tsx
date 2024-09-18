@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { onAuthStateChanged, signOut, User } from "firebase/auth"; // Import signOut from firebase
+import { onAuthStateChanged, signOut } from "firebase/auth"; // Import signOut from firebase
 import { useRouter } from "next/navigation";
 import { auth } from "@/firebase/config"; // Adjust the path if necessary
 import Loading from "@/components/loading";
-import { getData } from "@/drizzle/db";
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(true);

@@ -1,7 +1,6 @@
 import * as admin from "firebase-admin";
 
 // Initialize the Firebase Admin SDK
-console.log(process.env.FIREBASE_SERVICE_ACCOUNT);
 const serviceAccount = JSON.parse(
   process.env.FIREBASE_SERVICE_ACCOUNT as string
 );
