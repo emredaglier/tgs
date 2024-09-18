@@ -69,6 +69,7 @@ const HomeAbout = () => {
             bgDark={false}
             reverse={false}
             imgHide={true}
+            wFull={false}
           />
           <HomePartners />
         </div>
