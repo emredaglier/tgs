@@ -24,15 +24,16 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 [] - Language support with cookie integration
 [🔄] - Database integration for announcements & news
-[] - Admin panel for interactive content editor
-[] - Auth for admin panel
+[🔄] - Admin panel for interactive content editor
+[✅] - Auth for admin panel
+[🔄] - Auth for API
 
 UI fixes ------
 [🔄] - Animations
 [🔄] - Home page
 [🔄] - Fully responsive
     [✅] - Home Page
-    [] - Announcements Page
+    [🔄] - Announcements Page
 [] - Corporate page
 [] - Services page
 [] - HR page
