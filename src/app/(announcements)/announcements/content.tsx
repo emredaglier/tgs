@@ -2,6 +2,14 @@ import margin from "@/components/margin";
 import AnnouncementsBlock from "./block";
 import { useEffect, useState } from "react";
 
+type AnnouncementsProps = {
+  id: number;
+  link: string;
+  title: string;
+  shortContent: string;
+  image: string;
+};
+
 const AnnouncementsContent = async () => {
   const [data, setData] = useState([]);
 
@@ -25,7 +33,7 @@ const AnnouncementsContent = async () => {
         className={`grid min-[2000px]:grid-cols-4 2xl:grid-cols-3 lg:grid-cols-2
           overflow-hidden gap-24 lg:gap-16 min-h-screen pb-32 ${margin}`}
       >
-        {data.map((item: any) => (
+        {data.map((item: AnnouncementsProps) => (
           <AnnouncementsBlock
             key={item.id}
             link={item.link}

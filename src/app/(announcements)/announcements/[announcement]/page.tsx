@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import AnnouncementApp from "./app";
 
-import { NextRequest } from "next/server";
 import { headers } from "next/headers";
 
 type Props = {
@@ -39,6 +38,8 @@ export const generateMetadata = async ({
 };
 
 const Announcement = ({ params }: { params: { announcement: string } }) => {
+  const link = params.announcement;
+  console.log(link);
   return (
     <>
       <main>

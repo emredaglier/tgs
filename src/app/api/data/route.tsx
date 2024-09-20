@@ -1,8 +1,13 @@
 import db from "@/drizzle/db"; // Adjust path to your getData function
 //import { verifyIdToken } from "@/firebase/admin"; // Import Firebase Admin
-import { NextRequest, NextResponse } from "next/server";
+import {
+  //NextRequest,
+  NextResponse,
+} from "next/server";
 
-export async function GET(request: NextRequest) {
+// request: NextRequest
+
+export async function GET() {
   /*
   const authHeader = request.headers.get("Authorization");
 
