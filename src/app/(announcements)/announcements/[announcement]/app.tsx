@@ -8,10 +8,10 @@ const Nav = dynamic(() => import("@/components/nav/nav"), { ssr: false });
 const Footer = dynamic(() => import("@/components/footer"));
 
 const Content = dynamic(
-  () => import("@/app/(announcements)/announcements/content")
+  () => import("@/app/(announcements)/announcements/[announcement]/content")
 );
 
-const AnnouncementsApp = () => {
+const AnnouncementApp = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -42,4 +42,4 @@ const AnnouncementsApp = () => {
   );
 };
 
-export default AnnouncementsApp;
+export default AnnouncementApp;

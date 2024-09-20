@@ -1,13 +1,8 @@
 import db from "@/drizzle/db"; // Adjust path to your getData function
 //import { verifyIdToken } from "@/firebase/admin"; // Import Firebase Admin
-import {
-  //NextRequest,
-  NextResponse,
-} from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-// request: NextRequest
-
-export async function GET() {
+export async function GET(request: NextRequest) {
   /*
   const authHeader = request.headers.get("Authorization");
 
@@ -25,7 +20,17 @@ export async function GET() {
 
     if (decodedToken.uid === process.env.FIREBASE_ADMIN_UID) {
     */
-  const data = await db.getData();
+
+  const { searchParams } = new URL(request.url);
+
+  const id = searchParams.get("link");
+  if (id === null) {
+    return new NextResponse("Missing link", { status: 400 });
+  }
+  if (id === "") {
+    return new NextResponse("Missing link", { status: 400 });
+  }
+  const data = await db.selectData(id);
 
   return new NextResponse(JSON.stringify(data), {
     status: 200,
