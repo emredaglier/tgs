@@ -20,7 +20,17 @@ export async function GET(request: NextRequest) {
 
     if (decodedToken.uid === process.env.FIREBASE_ADMIN_UID) {
     */
-  const data = await db.getData();
+
+  const { searchParams } = new URL(request.url);
+
+  const id = searchParams.get("link");
+  if (id === null) {
+    return new NextResponse("Missing link", { status: 400 });
+  }
+  if (id === "") {
+    return new NextResponse("Missing link", { status: 400 });
+  }
+  const data = await db.selectData(id);
 
   return new NextResponse(JSON.stringify(data), {
     status: 200,

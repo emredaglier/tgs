@@ -19,7 +19,13 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
-    // Insert data into the database
+
+    data["link"] = title.replace(/\s+/g, "-").toLowerCase();
+
+    // Short content should be sent from dashboard before marking down the content. For development purposes we will use static placeholder
+    data["shortContent"] =
+      "With autonomous technology advancing, will pilots become obsolete? We explore the future of pilot roles and the potential for fully automated aviation.";
+
     await db.insertData(data);
 
     return NextResponse.json({ success: true }, { status: 201 });
