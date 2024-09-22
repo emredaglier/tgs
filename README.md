@@ -35,7 +35,7 @@ UI fixes ------
 [] - Services page
 [] - HR page
 [] - Dynamic announcements page
-[] - Footer
+[✅] - Footer
 
 
 ```
