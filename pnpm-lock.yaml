@@ -100,8 +100,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@types/node':
-        specifier: ^22.7.0
-        version: 22.7.0
+        specifier: ^22.7.2
+        version: 22.7.2
       '@types/react':
         specifier: ^18.3.9
         version: 18.3.9
@@ -1783,8 +1783,8 @@ packages:
   '@types/node@20.16.5':
     resolution: {integrity: sha512-VwYCweNo3ERajwy0IUlqqcyZ8/A7Zwa9ZP3MnENWcB11AejO+tLy3pu850goUW2FC/IJMdZUfKpX/yxL1gymCA==}
 
-  '@types/node@22.7.0':
-    resolution: {integrity: sha512-MOdOibwBs6KW1vfqz2uKMlxq5xAfAZ98SZjO8e3XnAbFnTJtAspqhWk7hrdSAs9/Y14ZWMiy7/MxMUzAOadYEw==}
+  '@types/node@22.7.2':
+    resolution: {integrity: sha512-866lXSrpGpgyHBZUa2m9YNWqHDjjM0aBTJlNtYaGEw4rqY/dcD7deRVTbBBAJelfA7oaGDbNftXF/TL/A6RgoA==}
 
   '@types/pg@8.11.6':
     resolution: {integrity: sha512-/2WmmBXHLsfRqzfHW7BNZ8SbYzE8OSk7i3WjFYvfgRHj7S1xj+16Je5fUKv3lVdVzk/zn9TXOqf+avFCFIE0yQ==}
@@ -5486,7 +5486,7 @@ snapshots:
   '@grpc/grpc-js@1.9.15':
     dependencies:
       '@grpc/proto-loader': 0.7.13
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
 
   '@grpc/proto-loader@0.7.13':
     dependencies:
@@ -5545,7 +5545,7 @@ snapshots:
       '@inquirer/figures': 1.0.6
       '@inquirer/type': 2.0.0
       '@types/mute-stream': 0.0.4
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -6515,14 +6515,14 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
 
   '@types/caseless@0.12.5':
     optional: true
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
 
   '@types/cookie@0.6.0': {}
 
@@ -6538,7 +6538,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.5':
     dependencies:
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       '@types/qs': 6.9.16
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -6564,7 +6564,7 @@ snapshots:
 
   '@types/jsonwebtoken@9.0.7':
     dependencies:
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
 
   '@types/long@4.0.2':
     optional: true
@@ -6579,11 +6579,11 @@ snapshots:
 
   '@types/mute-stream@0.0.4':
     dependencies:
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
 
   '@types/node-fetch@2.6.11':
     dependencies:
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       form-data: 4.0.0
 
   '@types/node@18.19.50':
@@ -6594,13 +6594,13 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
-  '@types/node@22.7.0':
+  '@types/node@22.7.2':
     dependencies:
       undici-types: 6.19.8
 
   '@types/pg@8.11.6':
     dependencies:
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       pg-protocol: 1.7.0
       pg-types: 4.0.2
 
@@ -6624,7 +6624,7 @@ snapshots:
   '@types/request@2.48.12':
     dependencies:
       '@types/caseless': 0.12.5
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       '@types/tough-cookie': 4.0.5
       form-data: 2.5.1
     optional: true
@@ -6632,12 +6632,12 @@ snapshots:
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
 
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       '@types/send': 0.17.4
 
   '@types/tough-cookie@4.0.5':
@@ -7674,7 +7674,7 @@ snapshots:
       '@fastify/busboy': 3.0.0
       '@firebase/database-compat': 1.0.8
       '@firebase/database-types': 1.0.5
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       farmhash-modern: 1.1.0
       jsonwebtoken: 9.0.2
       jwks-rsa: 3.1.0
@@ -9154,7 +9154,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       long: 5.2.3
 
   punycode@2.3.1: {}
